@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements PushPermissionRes
             public void onClick(View v) {
                 // Navigate to Native Display Activity
                 startActivity(new Intent(MainActivity.this, NativeDisplayActivity.class));
+                cleverTapDefaultInstance.pushEvent("Native Display");
             }
         });
 
